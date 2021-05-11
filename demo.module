@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Contains demo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_help().
+ */
+function demo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the demo module.
+    case 'help.page.demo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Demo') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Provides a theme definition
+ * {@inheritdoc}
+ */
+function demo_theme($existing, $type, $theme, $path) {
+  $theme = [
+    'card_listing_block' => [
+        'path' => $path . '/templates',
+        'template' => 'card-listing-block',
+        'render element' => 'elements',
+    ],
+  ];
+  
+  return $theme;
+}
+
+/**
+ * Prepares variables for templates.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the user information and any
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_card_listing_block(array &$variables) {
+  // Helpful $content variable for templates.
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}

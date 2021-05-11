@@ -1,0 +1,13 @@
+{
+    "name": "demo",
+    "type": "drupal-module",
+    "description": "Demo",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/demo",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/demo",
+        "source": "http://cgit.drupalcode.org/demo",
+    },
+}

@@ -1,0 +1,15 @@
+name: 'demo'
+type: module
+description: 'Demo'
+core_versrion_requirement: 8.x
+package: 'Custom'
+dependencies:
+  - field
+  - field_layout
+  - image
+  - layout_builder
+  - layout_discovery
+  - link
+  - media
+  - media_library
+  - text

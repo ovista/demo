@@ -1,0 +1,31 @@
+add card entities:
+  title: 'Create new Card entities'
+
+administer card entities:
+  title: 'Administer Card entities'
+  description: 'Allow to access the administration form to configure Card entities.'
+  restrict access: true
+
+delete card entities:
+  title: 'Delete Card entities'
+
+edit card entities:
+  title: 'Edit Card entities'
+
+view published card entities:
+  title: 'View published Card entities'
+
+view unpublished card entities:
+  title: 'View unpublished Card entities'
+
+view all card revisions:
+  title: 'View all Card revisions'
+
+revert all card revisions:
+  title: 'Revert all Card revisions'
+  description: 'Role requires permission <em>view Card revisions</em> and <em>edit rights</em> for card entities in question or <em>administer card entities</em>.'
+
+delete all card revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Card revisions</em> and <em>delete rights</em> for card entities in question or <em>administer card entities</em>.'
+
