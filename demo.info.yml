@@ -1,7 +1,7 @@
 name: 'demo'
 type: module
 description: 'Demo'
-core_versrion_requirement: 8.x
+core_version_requirement: ^8.8 || ^9
 package: 'Custom'
 dependencies:
   - field

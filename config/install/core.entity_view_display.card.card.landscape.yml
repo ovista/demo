@@ -10,8 +10,6 @@ dependencies:
   module:
     - demo
     - layout_builder
-    - link
-    - text
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -21,36 +19,8 @@ targetEntityType: card
 bundle: card
 mode: landscape
 content:
-  field_body:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_card_image:
-    type: entity_reference_entity_view
-    weight: 2
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_cta:
-    weight: 0
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
   field_heading:
-    weight: 1
+    weight: 0
     label: above
     settings:
       link_to_entity: false
@@ -58,6 +28,9 @@ content:
     type: string
     region: content
 hidden:
+  field_body: true
+  field_card_image: true
+  field_cta: true
   langcode: true
   name: true
   user_id: true
