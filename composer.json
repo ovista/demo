@@ -1,13 +1,14 @@
 {
-    "name": "demo",
-    "type": "drupal-module",
-    "description": "Demo",
-    "keywords": [
-    ],
-    "homepage": "https://www.drupal.org/project/demo",
-    "minimum-stability": "dev",
-    "support": {
-        "issues": "https://www.drupal.org/project/issues/demo",
-        "source": "http://cgit.drupalcode.org/demo",
-    },
+  "name": "ovista/demo",
+  "type": "drupal-custom-module",
+  "description": "Demo.",
+  "keywords": ["Drupal", "demo"],
+  "homepage": "https://github.com/ovista/demo",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ovidiu Stancel",
+      "email": "ovidiu.stancel@gmail.com"
+    }
+  ],
 }
